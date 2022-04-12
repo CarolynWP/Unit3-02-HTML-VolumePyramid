@@ -1,0 +1,22 @@
+body {
+	background-color: #E1DEE9;
+}
+
+.margin {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h2 {
+	background-color: #D5CFE1;
+	color: #A09ABC;
+}
+
+h4 {
+	background-color: #D5CFE1;
+	color: #a48e8e;
+}
+
+h6 {
+	color: #a48e8e;
+}

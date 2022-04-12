@@ -22,42 +22,48 @@
 		
 			<!-- MDL -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-orange.min.css" />
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.purple-pink.min.css" />
 	</head>
 	
 	<!-- Body -->
 	<body>
 		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-		<h1>Volume of a Right Triangular Pyramid Calculator</h1>
-		
-		<!-- Base -->
-<form action="#">
-  <div class="mdl-textfield mdl-js-textfield">
-    <input class="mdl-textfield__input" type="text" id="sample1">
-    <label class="mdl-textfield__label" for="sample1">Text...</label>
-  </div>
-</form>
-		
-<!-- height 1 -->
-<form action="#">
-  <div class="mdl-textfield mdl-js-textfield">
-    <input class="mdl-textfield__input" type="text" id="sample1">
-    <label class="mdl-textfield__label" for="sample1">Text...</label>
-  </div>
-</form>
-		
-<!-- Height 2 -->
-<form action="#">
-  <div class="mdl-textfield mdl-js-textfield">
-    <input class="mdl-textfield__input" type="text" id="sample1">
-    <label class="mdl-textfield__label" for="sample1">Text...</label>
-  </div>
-</form>
-
-		<!-- Calculate -->
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-  Button
-</button>
-
+		<div class="margin">
+			<h2>Volume of a Right Triangular Pyramid Calculator</h2>
+			<h4>Enter the base and both heights:</h4>
+			<!-- Base -->
+			<form action="#">
+				<div class="mdl-textfield mdl-js-textfield">
+					<input class="mdl-textfield__input" type="text" id="base">
+					<label class="mdl-textfield__label" for="base">Base (b)</label>
+				</div>
+			</form>
+			<!-- height 1 -->
+			<form action="#">
+				<div class="mdl-textfield mdl-js-textfield">
+					<input class="mdl-textfield__input" type="text" id="height1">
+					<label class="mdl-textfield__label" for="height1">Height (h)</label>
+				</div>
+			</form>
+			<!-- Height 2 -->
+			<form action="#">
+				<div class="mdl-textfield mdl-js-textfield">
+					<input class="mdl-textfield__input" type="text" id="height2">
+					<label class="mdl-textfield__label" for="height2">Height (H)</label>
+				</div>
+			</form>
+			<!-- Calculate -->
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="calculate()">
+				Button
+			</button>
+			<br>
+			<h6>
+				<div id="answers">
+					<div id="volume"></div>
+				</div>
+			</h6>
+			<br>
+			<img src="./images/triangle.webp" width="200px" alt="triangular pyramid">
+		</div>
 	</body>
 </html>
